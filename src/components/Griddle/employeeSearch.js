@@ -11,11 +11,12 @@ class EmployeeAutoComplete extends Component {
 
   onSearchChange(e) {
     const searchValue = e.target.value;
-    const employees = [
-                {"id": 1, "firstName": "James", "lastName": "King", },
-                {"id": 2, "firstName": "Julie", "lastName": "Taylor", },
-                {"id": 3, "firstName": "Eugene", "lastName": "Lee", },
-            ];
+    debugger;
+    // const employees = [
+    //             {"id": 1, "firstName": "James", "lastName": "King", },
+    //             {"id": 2, "firstName": "Julie", "lastName": "Taylor", },
+    //             {"id": 3, "firstName": "Eugene", "lastName": "Lee", },
+    //         ];
 
     this.setState({
       filtered_schools: _.filter(employees, (item) => {
@@ -28,13 +29,13 @@ class EmployeeAutoComplete extends Component {
   }
 
   render() {
-    const filteredSchools = "<tr><td></td><td></td></tr>";
+    const filteredSchools = "<tr><td>111</td><td>222</td></tr>";
     //this.state.filtered_schools;
     //.map((school_profile, i) => <h2 name={school_profile} key={i} />)
     // debugger;
       return (
           <div id="school-admin-search-container"> 
-              <input type="text" placeholder="School Name or Moe ID" id="search-input" onChange={this.onSearchChange.bind(this)} />
+              <input type="text" placeholder="School Name or Moe ID(1)" id="search-input"  onClick="alert();" />
               <table className="search-results">
                 <tbody>
                   {filteredSchools}
@@ -45,22 +46,24 @@ class EmployeeAutoComplete extends Component {
   }
 }
 
-class Employee extends Component {
-  goToSchoolAdminDashboard(moe_id) {
-    window.location = window.location + '/manage/' + moe_id;
-  }
+// onchange={this.onSearchChange.bind(this)}
+//
+// class Employee extends Component {
+//   goToSchoolAdminDashboard(moe_id) {
+//     window.location = window.location + '/manage/' + moe_id;
+//   }
 
-  render() {
-    const {id, firstName} = this.props.school_profile;
+//   render() {
+//     const {id, firstName} = this.props.school_profile;
 
-    return (
-        <tr className="search-result" onClick={this.goToSchoolAdminDashboard.bind(null, moe_id)}>
-          <td className="result-moe-id">{moe_id}</td>
-          <td className="result-school-name">{school_name}</td>
-        </tr>
-        );
-  }
-}
+//     return (
+//         <tr className="search-result" onClick={this.goToSchoolAdminDashboard.bind(null, moe_id)}>
+//           <td className="result-moe-id">{moe_id}</td>
+//           <td className="result-school-name">{school_name}</td>
+//         </tr>
+//         );
+//   }
+// }
 
 
 var employees = [

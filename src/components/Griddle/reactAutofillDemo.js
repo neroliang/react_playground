@@ -11,12 +11,14 @@ class Form extends Component {
  
     handleChange(e) {
  
+        console.log("event-->"+e);
         const { name, value } = e.currentTarget;
         const nextState = {};
  
         nextState[name] = value;
  
         this.setState(nextState);
+        console.log("name"+name);
  
     }
  
