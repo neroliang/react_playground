@@ -29,15 +29,21 @@
     "extract-text-webpack-plugin": "^0.8.1",
     "file-loader": "^0.8.4",
     "gh-pages": "git://github.com/markdalgleish/gh-pages#cli-message",
+    "griddle-react": "0.4.1",
     "node-libs-browser": "^0.5.0",
     "postcss-color-rebeccapurple": "^1.1.0",
     "postcss-loader": "^0.4.3",
     "raw-loader": "^0.5.1",
-    "react": "^0.13.3",
+    "react": "^0.14.8",
+    "react-autofill": "^1.1.2",
+    "react-dom": "^0.14.2",
     "react-to-html-webpack-plugin": "^2.2.0",
     "style-loader": "^0.12.3",
     "url-loader": "^0.5.6",
     "webpack": "^1.9.10",
     "webpack-dev-server": "^1.9.0"
+  },
+  "dependencies": {
+    "griddle-react": "^0.4.1"
   }
 }
