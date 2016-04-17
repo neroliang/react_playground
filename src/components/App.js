@@ -23,7 +23,7 @@ export default class App extends Component {
 
 
         <hr className={styles.hr} />
-        <EmployeeAutoComplete />        
+        <EmployeeAutoComplete />
       </div>
     );
   }
